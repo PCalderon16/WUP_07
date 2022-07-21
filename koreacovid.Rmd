@@ -63,12 +63,18 @@ The first bar chart shows the frequency of females and males that are alive or d
 The second bar chart, meanwhile, shows a visual approximation of the percentages of females and males that are alive or dead. Among the female population, there seem to be a 60:40 ratio of living females to dead females. Among males, there seem to be a 40:60 ratio of living males to dead males. From the information gathered from the bar charts above, there appears to be more dead males than there are females. This statement will be tested further in the following sections of this write up. 
 
 
-
-
-
-
   
 ## Numerical results
+
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+The two tables above present information about the percentage of alive and dead females and males. Looking at the first table, it shows that among people who are alive, 56% of this population are females while 44% are male. Hence, more females are alive than males. Furthermore, among the people who are dead, 36% are female while 64% are male. In other words, there are more dead males than there are females. 
+
+The second table, meanwhile, looks into the female and male population separately. The most vital information on this table is that there is only 1.4% dead among females while there is a 3% death among males. The death percentage among men is twice than the death rate of females. Therefore, it supports the idea that there is more deaths among male than females. Again, this statement will further be tested in the coming sections. 
+
 
 
 ## Inferential results 
