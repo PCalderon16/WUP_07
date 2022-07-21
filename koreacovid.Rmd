@@ -36,6 +36,8 @@ with(kRdata, table(Sex, result))
 
 ```
 
+At first glance, it can be seen that there are more females alive than there are males, and there are more males dead than there are females. No concrete conclusion can be drawn from this information so far. Therefore, further testing must be conducted to determine whether dying of covid is independent of sex. 
+
 ## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
 
 `
