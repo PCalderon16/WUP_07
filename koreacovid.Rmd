@@ -42,7 +42,26 @@ At first glance, it can be seen that there are more females alive than there are
 
 `
 
-  
+```{r}
+dd2 <- kRdata %>% group_by(result,Sex) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
+
+
+# the group_by followed by summarize(count=n())
+
+basicC <- ggplot(dd2,aes(x=result,y=count,fill=Sex))
+basicC + geom_bar(stat="identity",position="dodge")
+
+#Now for percentage plot
+
+basicCC <- ggplot(dd2,aes(x=result,y=prcnt*100,fill=Sex)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+
+```
+
+The first bar chart shows the frequency of females and males that are alive or dead. It shows that there are generally more females in the sample, and among the female population, more than 1700 are alive while less than 100 females are dead from covid. For men, on the other hand, there are less than 1500 who are alive, and the number of dead males is larger than dead females. 
+
+The second bar chart, meanwhile, shows a visual approximation of the percentages of females and males that are alive or dead. Among the female population, there seem to be a 60:40 ratio of living females to dead females. Among males, there seem to be a 40:60 ratio of living males to dead males. From the information gathered from the bar charts above, there appears to be more dead males than there are females. This statement will be tested further in the following sections of this write up. 
+
 
 
 
