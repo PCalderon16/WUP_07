@@ -90,4 +90,4 @@ Chi-squared test and Fisher's exact test were done to further analyze whether co
 
 ## Conclusions
 
-
+This write-up includes data regarding the state (alive or dead) of females and males in South Korea upon being infected by covid. The objective is to determine whether the dying of covid is independent of death. Visual and numerical descriptive results were analyzed, and it appeared that men are more likely to die of covid than female. This same idea is confirmed through the inferential results, and it was found out that men are specifically 2.3 more likely to die from covid than females. Therefore, it can be conluded that dying of covid is dependent on sex. 
