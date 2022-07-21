@@ -79,8 +79,15 @@ The second table, meanwhile, looks into the female and male population separatel
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
+Chi-squared test and Fisher's exact test were done to further analyze whether covid death is independent of sex. The chi-squared test shows the actual values of observed counts that were visualized by the frequency bar chart earlier. As described previously, there are more females who are alive than males, and there are more dead males than there are females. Furthermore, the most important information can be taken from the fisher's exact test. The p-value is very small meaning that there is a statistical difference in the death rate among male and female. Furthermore, this test shows that there male are 2.3 more likely to die from covid than females based on the odds ratio value. 
 
 
 ## Conclusions
+
 
